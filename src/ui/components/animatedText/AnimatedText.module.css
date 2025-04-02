@@ -1,0 +1,11 @@
+.token {
+	transform: translate3d(0, var(--reveal-start, 110%), 0);
+	transition: transform var(--reveal-hide-duration, 0.75s) var(--reveal-hide-easing, theme('transitionTimingFunction.quart-in'));
+	transition-delay: calc((var(--reveal-hide-delay, 0) + (var(--reveal-token-idx, 0) * var(--reveal-hide-stagger, 0))) * 1s);
+}
+  
+.active .token {
+	transform: none;
+	transition: transform var(--reveal-duration, 1.125s) var(--reveal-easing, theme('transitionTimingFunction.quart-out'));
+	transition-delay: calc((var(--reveal-delay, 0) + (var(--reveal-token-idx, 0) * var(--reveal-stagger, 0))) * 1s);
+}

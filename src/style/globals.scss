@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+	:root {
+	  --background: #0a0a0a;
+	  --foreground: #ededed;
+	}
+  }
+
+	html {
+		@apply antialiased;
+
+		--sbw: 0px;
+		--screen-height-min: 100vh;
+		--screen-height-max: 100vh;
+		--screen-width: calc(100vw - var(--sbw));
+	}
+
+	@supports (height: 100svh) {
+		html {
+			--screen-height-min: 100svh;
+			--screen-height-max: 100lvh;
+		}
+	}
+
+	body {
+		color: var(--foreground);
+		background: var(--background);
+		font-family: Arial, Helvetica, sans-serif;
+	  }
+
+	* {
+		-webkit-tap-highlight-color: transparent;
+	}
+}
