@@ -1,40 +1,36 @@
 import type { Metadata } from "next";
-import { neuemontreal } from "@/fonts/NeueMontreal";
+import { courier } from "@/fonts/Courier";
 import "@/style/globals.scss";
-import { Lenis, Grid, Header, Footer, GsapScrollTrigger } from '@/ui/components'
+import logo from "@/assets/images/logo.svg";
+import { Lenis, Grid, GsapScrollTrigger, Menu } from "@/ui/components";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-	title: "Starter 2025",
-	description: "Starter 2025",
+  title: "Geurimi Café",
+  description: "Coffee shop in Paris with concept art",
+  icons: {
+    icon: logo.src,
+  },
 };
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			{/* {process.env.NODE_ENV !== 'production' && (
-				<head>
-					<script src='https://unpkg.com/react-scan/dist/auto.global.js' async />
-				</head>
-			)} */}
-			<body
-				className={`${neuemontreal.variable} ${neuemontreal.variable} antialiased`}
-			>
-				<Suspense>
-					<Header />
-				</Suspense>
-				<main id="content" tabIndex={-1}>{children}</main>
-				<Suspense>
-					<Footer />
-				</Suspense>
-				<Grid />
-				<GsapScrollTrigger />
-				<Lenis key={`lenis${(children as React.ReactElement)?.key}`} />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body
+        className={`${courier.variable} ${courier.variable} font-serif text-black antialiased bg-gray`}
+      >
+        <main id="content" tabIndex={-1}>
+          {children}
+        </main>
+        <Menu />
+        <Grid />
+        <GsapScrollTrigger />
+        <Lenis key={`lenis${(children as React.ReactElement)?.key}`} />
+      </body>
+    </html>
+  );
 }

@@ -1,6 +1,7 @@
 /** Config variables */
 const fontFamily = {
 	sans: ['var(--font-neue)', 'sans-serif'],
+	serif: ['var(--font-courier)', 'serif'],
 }
 
 /** Config variables */
