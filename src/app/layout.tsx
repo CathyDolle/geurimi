@@ -23,10 +23,10 @@ export default function RootLayout({
       <body
         className={`${courier.variable} ${courier.variable} font-serif text-black antialiased bg-gray`}
       >
+        <Menu />
         <main id="content" tabIndex={-1}>
           {children}
         </main>
-        <Menu />
         <Grid />
         <GsapScrollTrigger />
         <Lenis key={`lenis${(children as React.ReactElement)?.key}`} />

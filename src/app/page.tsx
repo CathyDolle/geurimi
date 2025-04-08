@@ -59,7 +59,7 @@ const storytellingItems: StorytellingItem[] = [
 export default function Home() {
   return (
     <>
-      <Content className="span-gap-1-wider text-12 leading-near">
+      <Content className="lg:span-gap-1-wider lg-max:gap-40 mb-64 text-12 leading-near">
         {storytellingItems.map((item, index) => (
           <Storytelling
             key={index}

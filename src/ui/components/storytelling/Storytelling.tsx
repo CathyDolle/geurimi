@@ -54,7 +54,7 @@ export const Storytelling = ({
           className="transition-all duration-700 ease-out opacity-0 translate-y-4"
         >
           <Image
-            className={`object-cover ${
+            className={`object-cover w-full ${
               variant === "landscape" ? "aspect-video" : "aspect-[2/3]"
             }`}
             src={media}
@@ -86,13 +86,13 @@ export const Storytelling = ({
   if (variant === "portrait") {
     return (
       <>
-        <ParallaxMedia className="span-w-3">{renderMedia()}</ParallaxMedia>
+        <ParallaxMedia className="lg:span-w-3 lg-max:h-300 w-full">{renderMedia()}</ParallaxMedia>
         <div
           ref={contentRef}
           className="flex flex-col gap-8 transition-all duration-700 ease-out opacity-0 translate-y-4"
         >
           <span>{title}</span>
-          <p className="opacity-60">{description}</p>
+          <p className="opacity-60 text-12">{description}</p>
         </div>
       </>
     );
@@ -102,12 +102,12 @@ export const Storytelling = ({
     <>
       <div
         ref={contentRef}
-        className="flex flex-col span-w-2 gap-12 transition-all duration-700 ease-out opacity-0 translate-y-4"
+        className="flex flex-col lg:span-w-2 gap-12 transition-all duration-700 ease-out opacity-0 translate-y-4"
       >
         <span className="text-14 uppercase">{title}</span>
-        <p className="opacity-60">{description}</p>
+        <p className="text-12 opacity-60">{description}</p>
       </div>
-      <ParallaxMedia className="span-w-3">{renderMedia()}</ParallaxMedia>
+      <ParallaxMedia className="lg:span-w-3 w-full">{renderMedia()}</ParallaxMedia>
     </>
   );
 };
