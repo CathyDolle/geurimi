@@ -19,7 +19,7 @@ const colors = {
 	transparent: 'transparent',
 	red: '#FF0000',
 	white: '#FFFFFF',
-	black: '#0F0F0F',
+	black: '#000000',
 	darkgray: '#F4F3F3',
 	brown: '#773C03',
 	gray: '#F2F2F2',

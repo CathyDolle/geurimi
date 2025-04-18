@@ -22,9 +22,19 @@ export const Menu = () => {
             <Image src={logo} alt="logo" />
           </Link>
           <h1 className="text-16 uppercase">Geurimi coffee</h1>
-          <p className="opacity-60">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-            hic.
+          <p className="opacity-80">
+            🎨 A good place where to draw
+            <br />
+            ☕️ Korean pastries and drinks
+            <br />
+            <br />
+            Wednesday to Friday
+            <br />
+            9h30-18h30 <br />
+            <br />
+            Saturday & Sunday
+            <br />
+            10h30-18h30
           </p>
           <Link
             href="https://www.instagram.com/geurimi_cafe/"
@@ -69,7 +79,7 @@ export const Menu = () => {
         {/* adress */}
         <div className="flex flex-col gap-8">
           <span>커피</span>
-          <p className="opacity-60">
+          <p className="opacity-80">
             11 rue des Écouffes,
             <br />
             Paris, France 75004

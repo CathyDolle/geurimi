@@ -18,14 +18,9 @@ const storytellingItems: StorytellingItem[] = [
     variant: "portrait",
     mediaType: "image",
     media: coffee,
-    title: "커피",
-    description: (
-      <>
-        11 rue des Écouffes,
-        <br />
-        Paris, France 75004
-      </>
-    ),
+    title: "Saveurs de Corée",
+    description:
+      "Découvrez nos délicieuses pâtisseries et boissons artisanales, toutes préparées avec amour dans notre cuisine. Un large choix de spécialités coréennes authentiques, des recettes traditionnelles transmises avec passion. Des saveurs uniques qui vous transportent directement en Corée.",
   },
   {
     variant: "landscape",
@@ -63,13 +58,14 @@ export default function Home() {
     <>
       <Content className="lg:span-gap-x-1-wider lg:gap-y-64 lg-max:gap-40 mb-64 text-12 leading-near">
         <Showcase i1="/videos/human.mp4" i2={showcase2} i3={showcase3} />
-        <div className="flex text-20 w-full flex-col gap-12">
-          <h2>CAFE NAME</h2>
-          <p className="text-12 lg:span-w-2 opacity-60">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-            aspernatur expedita eaque dicta dolorem? Aliquam, nulla excepturi
-            aliquid libero dolores maiores, architecto laudantium fugit
-            recusandae et dicta hic sapiente atque!
+        <div className="flex text-12 w-full flex-col gap-12">
+          <h2>LE CONCEPT</h2>
+          <p className="text-12 lg:span-w-3 opacity-80">
+            Geurimi est un café coréen qui offre un espace unique pour les
+            artistes et créatifs. C'est l'endroit idéal pour travailler dans une
+            ambiance chaleureuse tout en dégustant nos délicieuses pâtisseries
+            coréennes et boissons artisanales. Un lieu où la créativité et la
+            convivialité se rencontrent autour d'une tasse.
           </p>
         </div>
         {storytellingItems.map((item, index) => (

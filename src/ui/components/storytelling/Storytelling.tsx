@@ -91,10 +91,10 @@ export const Storytelling = ({
         </ParallaxMedia>
         <div
           ref={contentRef}
-          className="flex flex-col gap-8 transition-all duration-700 ease-out opacity-0 translate-y-4"
+          className="flex flex-col lg:span-w-2 gap-8 transition-all duration-700 ease-out opacity-0 translate-y-4"
         >
-          <span>{title}</span>
-          <p className="opacity-60 text-12">{description}</p>
+          <span className="uppercase text-14">{title}</span>
+          <p className="opacity-80 text-12">{description}</p>
         </div>
       </>
     );
@@ -107,7 +107,7 @@ export const Storytelling = ({
         className="flex flex-col lg:span-w-2 gap-12 transition-all duration-700 ease-out opacity-0 translate-y-4 lg-max:order-2"
       >
         <span className="text-14 uppercase">{title}</span>
-        <p className="text-12 opacity-60">{description}</p>
+        <p className="text-12 opacity-80">{description}</p>
       </div>
       <ParallaxMedia className="lg:span-w-3 lg-max:order-1 w-full">
         {renderMedia()}

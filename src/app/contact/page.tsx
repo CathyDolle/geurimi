@@ -9,29 +9,26 @@ export default function Contact() {
       <Showcase i1="/videos/v2.mp4" i2={showcase2} i3={showcase3} />
       {/* Formulaire */}
       <section className=" flex justify-between lg-max:flex-col w-full items-end">
-        <form className="flex flex-col w-full lg:span-w-3 gap-8">
+        <form className="flex flex-col w-full lg:span-w-4 gap-8">
           <h2 className="text-12 uppercase mb-8">Contact-us</h2>
           <input
             type="text"
             placeholder="Name"
-            className="p-8 focus:outline-black"
+            className="p-8 bg-white/10  focus:outline-black"
           />
           <input
             type="email"
             placeholder="Email"
-            className="p-8 focus:outline-black"
+            className="p-8 bg-white/10  focus:outline-black"
           />
           <textarea
             placeholder="Message"
-            className="focus:outline-black h-120 p-8"
+            className="focus:outline-black  bg-white/10 h-120 p-8"
           />
-          <button className="bg-black text-white p-8 uppercase" type="submit">
+          <button className="bg-white text-black p-8 uppercase" type="submit">
             Send
           </button>
         </form>
-        <p className="lg:span-w-2 lg-max:hidden text-10 uppercase">
-          Lorem ipsum dolor sit amet consectetur, adipi
-        </p>
       </section>
     </Content>
   );
