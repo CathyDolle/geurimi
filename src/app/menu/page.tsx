@@ -12,7 +12,6 @@ interface StorytellingItem {
 }
 
 
-
 export default function Menu() {
   return (
     <Content className="lg:span-gap-1-wider gap-40 mb-64 text-12 leading-near">

@@ -54,8 +54,8 @@ export const Storytelling = ({
           className="transition-all duration-700 ease-out opacity-0 translate-y-4"
         >
           <Image
-            className={`object-cover w-full ${
-              variant === "landscape" ? "aspect-video" : "aspect-[2/3]"
+            className={`object-cover w-full  ${
+              variant === "landscape" ? "aspect-square" : "aspect-[2/2.5]"
             }`}
             src={media}
             alt={title}
@@ -70,7 +70,7 @@ export const Storytelling = ({
         >
           <video
             className={`object-cover w-full h-full ${
-              variant === "landscape" ? "aspect-video" : "aspect-[2/3]"
+              variant === "landscape" ? "aspect-square" : "aspect-[2/2.5]"
             }`}
             src={media}
             autoPlay
@@ -86,7 +86,9 @@ export const Storytelling = ({
   if (variant === "portrait") {
     return (
       <>
-        <ParallaxMedia className="lg:span-w-3 lg-max:h-300 w-full">{renderMedia()}</ParallaxMedia>
+        <ParallaxMedia className="lg:span-w-3 lg-max:h-300 w-full">
+          {renderMedia()}
+        </ParallaxMedia>
         <div
           ref={contentRef}
           className="flex flex-col gap-8 transition-all duration-700 ease-out opacity-0 translate-y-4"
@@ -99,15 +101,17 @@ export const Storytelling = ({
   }
 
   return (
-    <>
+    <div className="flex flex-col lg-max:gap-32 justify-between w-full lg:flex-row">
       <div
         ref={contentRef}
-        className="flex flex-col lg:span-w-2 gap-12 transition-all duration-700 ease-out opacity-0 translate-y-4"
+        className="flex flex-col lg:span-w-2 gap-12 transition-all duration-700 ease-out opacity-0 translate-y-4 lg-max:order-2"
       >
         <span className="text-14 uppercase">{title}</span>
         <p className="text-12 opacity-60">{description}</p>
       </div>
-      <ParallaxMedia className="lg:span-w-3 w-full">{renderMedia()}</ParallaxMedia>
-    </>
+      <ParallaxMedia className="lg:span-w-3 lg-max:order-1 w-full">
+        {renderMedia()}
+      </ParallaxMedia>
+    </div>
   );
 };

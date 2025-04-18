@@ -15,7 +15,7 @@ export const Menu = () => {
 
   return (
     <>
-      <section className="lg-max:hidden lg:fixed flex flex-col justify-between top-0 span-p-1-wider left-0 z-50 bg-white span-w-4-wider text-12 leading-near h-full">
+      <section className="lg-max:hidden lg:fixed flex flex-col justify-between top-0 span-p-1-wider left-0 z-50 bg-white text-black span-w-4-wider text-12 leading-near h-full">
         {/* Intro infos */}
         <div className="flex flex-col gap-32">
           <Link href="/">
@@ -89,7 +89,7 @@ export const Menu = () => {
             Instagram
           </Link>
         </header>
-        <nav className="flex flex-row fixed margin-bottom-1 z-100 bg-white justify-center items-center w-full text-11 gap-8 border border-black/20 p-16">
+        <nav className="flex flex-row fixed margin-bottom-1 z-100 bg-white justify-center items-center span-w-6 margin-mx-1 text-11 gap-8 border border-black/20 p-16">
           <Link
             href="/"
             className={`uppercase ${

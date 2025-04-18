@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${courier.variable} ${courier.variable} font-serif text-black antialiased bg-gray`}
+        className={`${courier.variable} ${courier.variable} font-serif text-black antialiased bg-darkgray`}
       >
         <Menu />
         <main id="content" tabIndex={-1}>
