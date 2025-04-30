@@ -20,36 +20,31 @@ const storytellingItems: StorytellingItem[] = [
     media: coffee,
     title: "Saveurs de Corée",
     description:
-      "Découvrez nos délicieuses pâtisseries et boissons artisanales, toutes préparées avec amour dans notre cuisine. Un large choix de spécialités coréennes authentiques, des recettes traditionnelles transmises avec passion. Des saveurs uniques qui vous transportent directement en Corée.",
+      "Découvrez nos délicieuses pâtisseries et boissons artisanales, toutes préparées avec amour dans notre cuisine. Un large choix de spécialités coréennes authentiques, des recettes traditionnelles transmises avec passion.",
   },
   {
     variant: "landscape",
     mediaType: "video",
     media: "/videos/V5.mov",
-    title: "storytelling",
+    title: "Espace Créatif",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus blanditiis nam repellendus enim iure ducimus. Itaque quae",
+      "Un espace unique où se mêlent travail et détente, offrant un cadre inspirant pour se ressourcer et laisser libre cours à sa créativité.",
   },
   {
     variant: "portrait",
     mediaType: "video",
     media: "/videos/v3.mp4",
-    title: "Desc 2커피",
-    description: (
-      <>
-        11 rue des Écouffes,
-        <br />
-        Paris, France 75004
-      </>
-    ),
+    title: "Boissons Artisanales",
+    description:
+      "Vous pouvez commander nos boissons artisanales directement à votre table pendant que vous travaillez dans notre espace.",
   },
   {
     variant: "landscape",
     mediaType: "image",
     media: landscape,
-    title: "storytelling",
+    title: "Geurimi Café",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi temporibus blanditiis nam repellendus enim iure ducimus. Itaque quae",
+      "Rendez-vous au 11 rue des Écouffes, Paris 75004, pour découvrir l'univers unique de Geurimi.",
   },
 ];
 
@@ -65,7 +60,7 @@ export default function Home() {
             artistes et créatifs. C'est l'endroit idéal pour travailler dans une
             ambiance chaleureuse tout en dégustant nos délicieuses pâtisseries
             coréennes et boissons artisanales. Un lieu où la créativité et la
-            convivialité se rencontrent autour d'une tasse.
+            convivialité se rencontrent autour d'un encas.
           </p>
         </div>
         {storytellingItems.map((item, index) => (
