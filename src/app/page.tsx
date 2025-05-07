@@ -20,7 +20,7 @@ const storytellingItems: StorytellingItem[] = [
     media: coffee,
     title: "Saveurs de Corée",
     description:
-      "Découvrez nos délicieuses pâtisseries et boissons artisanales, toutes préparées avec amour dans notre cuisine. Un large choix de spécialités coréennes authentiques, des recettes traditionnelles transmises avec passion.",
+      "Découvrez nos délicieuses pâtisseries et boissons artisanales, toutes préparées avec amour dans notre cuisine. Un large choix de spécialités coréennes authentiques.",
   },
   {
     variant: "landscape",
@@ -36,7 +36,7 @@ const storytellingItems: StorytellingItem[] = [
     media: "/videos/v3.mp4",
     title: "Boissons Artisanales",
     description:
-      "Vous pouvez commander nos boissons artisanales directement à votre table pendant que vous travaillez dans notre espace.",
+      "Vous pouvez commander nos boissons artisanales directement au comptoir pendant que vous travaillez dans notre espace.",
   },
   {
     variant: "landscape",
