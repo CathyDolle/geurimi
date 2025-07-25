@@ -99,7 +99,7 @@ export const Menu = () => {
             Instagram
           </Link>
         </header>
-        <nav className="flex flex-row fixed margin-bottom-1 z-100 bg-white justify-center items-center span-w-6 margin-mx-1 text-11 gap-8 border border-black/20 p-16">
+        <nav className="flex flex-row text-black fixed margin-bottom-1 z-100 bg-white justify-center items-center span-w-6 margin-mx-1 text-11 gap-8 border border-black/20 p-16">
           <Link
             href="/"
             className={`uppercase ${
